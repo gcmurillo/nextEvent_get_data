@@ -14,7 +14,7 @@ public_tweets = api.home_timeline()
 
 file = open('data.csv', 'w')
 # print(public_tweets)
-file.write('date,text,url_imagen,categoria\n')
+# file.write('date,text,url_imagen,categoria\n')
 """
 stuff = api.user_timeline(screen_name = 'luisevivanco', count = 5, include_rts = True)
 
