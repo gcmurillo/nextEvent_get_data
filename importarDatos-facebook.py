@@ -10,4 +10,5 @@ text = '10211847728938977?fields=events{start_time,end_time,name,description,pla
 link = graph + text
 
 yo = requests.get(link)
-print(yo.text)
+json_data = json.loads(yo.text)
+print(json_data['events'])
