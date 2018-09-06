@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { DeportivoPage } from '../pages/deportivo/deportivo';
+import { CulturalPage } from '../pages/cultural/cultural';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -17,6 +18,7 @@ import { RestProvider } from '../providers/rest/rest';
   declarations: [
     MyApp,
     DeportivoPage,
+    CulturalPage,
     ContactPage,
     HomePage,
     TabsPage
@@ -30,6 +32,7 @@ import { RestProvider } from '../providers/rest/rest';
   entryComponents: [
     MyApp,
     DeportivoPage,
+    CulturalPage,
     ContactPage,
     HomePage,
     TabsPage
