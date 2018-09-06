@@ -12,7 +12,7 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 public_tweets = api.home_timeline()
 
-file = open('data.csv', 'w')
+file = open('data2.csv', 'w')
 # print(public_tweets)
 # file.write('date,text,url_imagen,categoria\n')
 """
@@ -33,10 +33,10 @@ def get_data(hashtag, categoria):
         if 'media' in tweet.entities:
             for image in  tweet.entities['media']:
                 #print(str(image['media_url']), end='|')
-                img_urls += str(image['media_url']) + '|'
+                img_urls += str(image['media_url'])
             #print('\n')
         try:
-            text = str(tweet.text).replace('\n',' ')
+            text = str(tweet.text).replace('\n',' ').replace(',', ';')
             linea = '' + ',"' + text + '",' + img_urls + ',' + categoria + '\n'
             print(linea)
             file.write(linea)

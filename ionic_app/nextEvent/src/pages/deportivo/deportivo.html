@@ -1,11 +1,12 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      Deportivo
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
   <ion-card *ngFor="let i of data" (click)="itemSelected(i)">
     <ion-item *ngIf="i.url_imagen != ''">
       <img src="{{ i.url_imagen }}" />
