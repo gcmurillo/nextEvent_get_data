@@ -1,0 +1,28 @@
+
+*** These modified files were found in JOE when it aborted on Wed Sep  5 22:11:50 2018
+*** JOE was aborted because the terminal closed
+
+*** File '/home/geancarlo/Github/nextEvent_get_data/.git/MERGE_MSG'
+Merge branch 'master' of https://github.com/gcmurillo/nextEvent_get_data
+
+# Por favor ingrese un mensaje de commit que explique por qué es necesaria esta fusión,
+# especialmente si esto fusiona un upstream actualizado en una rama de tópico.
+#
+# Líneas comenzando con '#' serán ignoradas, y un mensaje vacío aborta
+# el commit.
+
+
+*** File '(Unnamed)'
+/home/geancarlo/bitbucket/practica_progsis_librerias/.git/MERGE_MSG
+/home/geancarlo/Github/aquasolutions_web/.git/MERGE_MSG
+/home/geancarlo/Github/aquasolutions_web/.git/COMMIT_EDITMSG
+/home/geancarlo/Github/aquasolutions_web/.git/MERGE_MSG
+/home/geancarlo/Github/aquasolutions_web/.git/MERGE_MSG
+/home/geancarlo/KS/lein
+/home/geancarlo/Github/nextEvent_get_data/.git/MERGE_MSG
+
+*** File '* Startup Log *'
+Processing '/etc/joe/editorrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc
