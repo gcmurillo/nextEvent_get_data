@@ -12,9 +12,9 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 public_tweets = api.home_timeline()
 
-file = open('data.csv', 'a')
+file = open('data.csv', 'w')
 # print(public_tweets)
-# file.write('created_at,text,url_imagen,categoria\n')
+file.write('date,text,url_imagen,categoria\n')
 """
 stuff = api.user_timeline(screen_name = 'luisevivanco', count = 5, include_rts = True)
 
@@ -28,7 +28,7 @@ for tweet in public_tweets:
 """
 
 def get_data(hashtag, categoria):
-    for tweet in tweepy.Cursor(api.search,q="#" + hashtag + " #guayaquil",count=100, since="2018-08-01").items():
+    for tweet in tweepy.Cursor(api.search,q="#" + hashtag + " #guayaquil",count=200, since="2018-08-01").items():
         img_urls = ''
         if 'media' in tweet.entities:
             for image in  tweet.entities['media']:
@@ -37,7 +37,7 @@ def get_data(hashtag, categoria):
             #print('\n')
         try:
             text = str(tweet.text).replace('\n',' ')
-            linea = str(tweet.created_at) + ',"' + text + '",' + img_urls + ',' + categoria + '\n'
+            linea = '' + ',"' + text + '",' + img_urls + ',' + categoria + '\n'
             print(linea)
             file.write(linea)
         except:
