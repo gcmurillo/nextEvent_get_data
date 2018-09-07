@@ -15,17 +15,6 @@ public_tweets = api.home_timeline()
 file = open('data2.csv', 'w')
 # print(public_tweets)
 # file.write('date,text,url_imagen,categoria\n')
-"""
-stuff = api.user_timeline(screen_name = 'luisevivanco', count = 5, include_rts = True)
-
-for status in stuff:
-    print(str(status._json).encode("utf-8"))
-
-
-for tweet in public_tweets:
-    print(str(tweet.keys()).encode("utf-8"))
-    print(api.me)
-"""
 
 def get_data(hashtag, categoria):
     for tweet in tweepy.Cursor(api.search,q="#" + hashtag + " #guayaquil",count=200, since="2018-08-01").items():

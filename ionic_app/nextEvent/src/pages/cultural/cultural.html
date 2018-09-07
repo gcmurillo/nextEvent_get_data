@@ -14,7 +14,7 @@
 
 
 <ion-content padding>
-    <ion-card *ngFor="let i of culture" (click)="itemSelected(i)">
+    <ion-card *ngFor="let i of culture">
       <ion-item *ngIf="i.url_imagen != ''">
         <img src="{{ i.url_imagen }}" />
       </ion-item>
