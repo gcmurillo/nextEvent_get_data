@@ -10,7 +10,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class RestProvider {
 
-    apiUrl = 'assets/data/data.json';
+    apiUrl = 'assets/data/_data.json';
 
   constructor(public http: HttpClient) {
     console.log('Hello RestProvider Provider');

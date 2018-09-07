@@ -13,9 +13,12 @@
     <ion-item text-wrap>
       <h2 style="color:#fff">{{ i.text }}</h2>
     </ion-item>
-    <ion-item>
+    <ion-item *ngIf="i.categoria != ''">
       <ion-icon name="happy" item-start></ion-icon>
       Categoria: {{ i.categoria }}
+    </ion-item>
+    <ion-item *ngIf="i.date != ''">
+      Fecha: {{ i.date }}
     </ion-item>
   </ion-card>
 
